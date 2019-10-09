@@ -1,0 +1,24 @@
+<table class="table">
+    <thead>
+      <tr>
+            <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">DOB</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let itt of perDetails">
+            <td>{{itt.id}}</td>
+          <td>{{itt.name}}</td>
+          <td>{{itt.dob}}</td>
+          <td>{{itt.phone}}</td>
+          <td><button routerLink = "/view/{{itt.id}}" id = "itt.id" class = "btn  btn-primary">View Details</button></td>
+          
+          
+          <!-- <a routerLink="/review/{{itt.id}}" id = "itt.id" class="btn btn-sm btn-dark">Write a Review</a> -->
+          <!-- <a routerLink="/delete/{{book.id}}" class="btn btn-sm btn-danger">Delete</a> -->
+      </tr>
+    </tbody>
+  </table>

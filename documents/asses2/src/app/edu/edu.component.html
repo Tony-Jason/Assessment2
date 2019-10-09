@@ -1,0 +1,27 @@
+<div class="col-md-6 ">
+    <form (ngSubmit)="createRecord2()" >
+        <div class="form-group">
+            <label for="my-input">Degree</label>
+            <input type="text" placeholder="Enter your Degree" name="degree" [(ngModel)] = "degree" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="my-input">Marks</label>
+            <input type="number" placeholder="Enter your marks" name = "marks" [(ngModel)] = "marks" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="my-input">Stream</label>
+            <input type="text" placeholder="stream" name = "stream" [(ngModel)] = "stream"
+                class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="my-input">College</label>
+            <input type="text" placeholder="Enter your College Name" name = "college" [(ngModel)] = "college"
+                class="form-control">
+        </div>
+       
+        <button class="btn btn-primary" type="submit">Submit</button><br>
+       
+    </form>
+    <br>
+    <button class = "btn btn-primary" routerLink = "/list">View </button>
+</div>

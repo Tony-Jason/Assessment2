@@ -1,0 +1,24 @@
+<div class="container">
+    <h4>Employee Details</h4>
+    <div *ngFor="let iter of viewemp">
+        <div *ngIf="idview == iter.id"></div>
+        <h6>ID : {{iter.id}}</h6>
+        <h6>Name : {{iter.name}}</h6>
+        <p>DOB : {{iter.dob}}</p>
+        <p>Address : {{iter.address}}</p>
+        <p>Phone Number : {{iter.phone}}</p>
+
+    </div>
+
+
+    <div *ngFor="let itt of viewedu">
+        <div *ngIf="idview == itt.id"></div>
+        <p>Degree : {{itt.degree}}</p>
+        <p>Marks : {{itt.marks}}</p>
+        <p>Stream : {{itt.stream}}</p>
+        <p>College : {{itt.college}}</p>
+        
+    </div>
+    <button routerLink = "/list" class = "btn btn-primary">Go Back</button>
+
+</div>
